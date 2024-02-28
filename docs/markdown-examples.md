@@ -6,79 +6,29 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
 
+
+
+## Custom Containers
+
+<el-button v-pointer>抖动</el-button>
+<el-button v-pointer.ripple type="primary">涟漪效果</el-button>
+
+
 **Input**
 
 ````md
 ```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
+<el-button v-pointer>默认按钮</el-button>
+<br/><br/>
+<el-button>默认按钮</el-button>
+<br/><br/>
+<el-button type="primary">主要按钮</el-button>
+<br/><br/>
+<el-button type="success">成功按钮</el-button>
+<br/><br/>
+<el-button type="info">信息按钮</el-button>
+
 ````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
 
 ## More
 

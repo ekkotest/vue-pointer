@@ -1,4 +1,4 @@
-import './ripple.scss'
+import './index.css'
 import { DirectiveBinding } from 'vue'
 
 const calculate = (e: PointerEvent, el: HTMLElement) => {
