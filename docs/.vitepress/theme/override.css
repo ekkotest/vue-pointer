@@ -1,0 +1,72 @@
+/* :root {
+  --vt-c-brand: #646cff;
+  --vt-c-brand-light: #747bff;
+  --vt-c-brand-dark: #444cd8;
+} */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 60px;
+}
+.flex-column{
+  flex-direction: column;
+}
+.VPButton {
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.25s;
+  border-radius: 20px;
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  /* border: 1px solid transparent; */
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.25s;
+  /* border-color: var(--vp-button-brand-border); */
+  color: var(--vp-button-brand-text);
+  /* border-radius: 20px; */
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  border-radius: 10px;
+  background:rgb(211, 211, 228) ;
+
+}
+.button::after {
+  content: "";
+  color: inherit;
+  border-radius: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  z-index: -1;
+  contain: strict;
+  transition: 0.1s;
+  box-shadow: 0 0 0 0 currentcolor;
+}
+.wave{
+  color: #fff;
+}

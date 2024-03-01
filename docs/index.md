@@ -3,13 +3,13 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
+  name: "vue-pointer"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
       text: Markdown Examples
-      link: /markdown-examples
+      link: /directive
     - theme: alt
       text: API Examples
       link: /api-examples

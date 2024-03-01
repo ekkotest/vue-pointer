@@ -1,0 +1,6 @@
+.v_poninter_scale {
+  transition: 0.25s;
+}
+.v_poninter_scale:active {
+  transform: scale(0.95);
+}

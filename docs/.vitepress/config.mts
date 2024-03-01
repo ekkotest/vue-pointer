@@ -1,28 +1,31 @@
-import { defineConfig } from 'vitepress'
-
+import { defineConfig } from "vitepress";
+import MarkdownPreview from "vite-plugin-markdown-preview";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "vue-pointer",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "Home", link: "/" },
+      { text: "Examples", link: "/directive" },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: "Examples",
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          // { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "Markdown Examples", link: "/directive" },
+          { text: "Runtime API Examples", link: "https://tympanus.net/Development/ButtonStylesInspiration/" },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+  },
+  vite: {
+    // plugins: [MarkdownPreview()],
+  },
+});
